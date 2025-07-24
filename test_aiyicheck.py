@@ -10,7 +10,7 @@ default_args = {
 }
 
 with DAG(
-    dag_id='test1_aiyi',
+    dag_id='test1_aiyicheck',
     default_args=default_args,
     start_date=datetime(2023, 1, 1),
     schedule_interval='@daily',
@@ -20,5 +20,5 @@ with DAG(
 
     BashOperator(
         task_id='hello_test1',
-        bash_command='echo Hello from test1!',
+        bash_command='echo Hello from testaiyicheck!',
     )

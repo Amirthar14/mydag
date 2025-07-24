@@ -3,7 +3,7 @@ from airflow.operators.dummy import DummyOperator
 from datetime import datetime
 
 with DAG(
-    "test_dag",
+    "test_dagcheck",
     start_date=datetime(2023, 1, 1),
     schedule_interval="@daily",
     catchup=False,
